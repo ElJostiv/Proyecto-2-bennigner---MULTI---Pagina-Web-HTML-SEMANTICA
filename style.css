@@ -1,0 +1,190 @@
+/* Variables CSS para facilitar el uso de colores y el modo oscuro */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #000000;
+    --hover-color: #f0f0f0;
+    --font-family: "DM Sans", sans-serif;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Esto hace que el padding no aumente el tamaño de los elementos */
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 2.5;
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+}
+
+.items-nav {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.titulo {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+
+.contenedor-secundario {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+}
+
+.contenedor-secundario>aside:first-child {
+    flex: 2;
+}
+
+.contenedor-secundario>.contenedor-interno {
+    flex: 3;
+}
+
+.contenedor-secundario>aside:last-child {
+    flex: 3;
+}
+
+.contenedor-interno {
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    padding: 0 20px;
+}
+
+.contenedor-interno section {
+
+    padding: 20px 0;
+}
+
+.contenedor-interno section:first-child {
+    border-bottom: 2px solid var(--border-color);
+}
+
+.borde li {
+    border-bottom: 2px solid var(--border-color);
+    padding: 10px 0;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.contenedor-interno a {
+    color: #007bff;
+}
+
+aside li:last-child {
+    border-bottom: none;
+}
+
+.contenedor-secundario>aside:last-child ul {
+    list-style: none;
+}
+
+.contenedor-secundario>aside:last-child li::before {
+    content: "-";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Jim Nightshade', cursive;
+}
+
+.contenedor-final {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.contenedor-final article {
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    margin: 40px;
+
+}
+
+.contenedor-final article p:nth-child(2),
+.contenedor-final article p:nth-child(3) {
+    color: #888888
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+aside h2 {
+    margin-left: 20px;
+}
+
+.titulo-h2 {
+    margin: 20px;
+}
+
+@media (max-width: 768px) {
+    .contenedor-secundario {
+        flex-direction: column;
+        gap: 0;
+        text-align: center;
+    }
+
+    .contenedor-interno {
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid var(--border-color);
+        border-bottom: 2px solid var(--border-color);
+        padding: 20px 0;
+    }
+
+    .contenedor-final {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navegacion-principal {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #1a1a1a;
+        --text-color: #f0f0f0;
+        --border-color: #555555;
+        --hove-color: #333333;
+    }
+
+    .contenedor-interno a {
+        color: #4da3ff;
+    }
+}

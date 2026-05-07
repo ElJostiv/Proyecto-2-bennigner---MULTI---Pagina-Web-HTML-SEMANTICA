@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta title=" Diseño Web Básico - Inicio">
     <title>Diseño Web Básico - Proyectos</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jim+Nightshade&display=swap"
+        rel="stylesheet">
 
     <meta name="description" content="Pagina basica para aprender fundamentos de HTML Semantico">
 </head>
@@ -18,7 +30,7 @@
                 <li><a href="index.html">Casa /</a></li>
                 <li><a href="Proyectos.html">Proyectos /</a></li>
                 <lI><a href="articulos.html">articulos /</a></li>
-                <li><a href="contacto.html">Contacto /</a></li>
+                <li><a href="contacto.html">Contacto </a></li>
             </ul>
         </nav>
     </header>
@@ -29,72 +41,78 @@
         <p>Proyecto html semantico con css basico</p>
     </main>
 
-    <hr>
 
 
+    <div class="contenedor-secundario">
 
-    <aside>
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="#">HTML portafolio</a></li>
-            <li><a href="#">Calculadora</a></li>
-            <li><a href="#">Quizz App</a></li>
-            <li><a href="#">Productos</a></li>
-            <li><a href="#">Eventos</a></li>
-        </ul>
-    </aside>
+        <aside>
+            <h2>Proyectos</h2>
+            <ul class="borde">
+                <li><a href="#">HTML portafolio</a></li>
+                <li><a href="#">Calculadora</a></li>
+                <li><a href="#">Quizz App</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Eventos</a></li>
+            </ul>
+        </aside>
+        <div class="contenedor-interno">
+            <section>
+                <h2>Experiencia laboral</h2>
+                <p>Mira todo los proectos frontend</p>
+                <p><a href="#">Ver proyectos</a></p>
+            </section>
 
-    <section>
-        <h2>Experiencia laboral</h2>
-        <p>Mira todo los proectos frontend</p>
-        <p><a href="#">Ver proyectos</a></p>
-    </section>
+            <section>
+                <h2>Trabajo a codigo abierto</h2>
+                <p>Contribui a 50 trabajos de codigo abierto y tengo mas de 200 estrellas en Github</p>
+                <p><a href="#">Ver mi perfil de github</a></p>
+            </section>
+        </div>
 
-    <section>
-        <h2>Trabajo a codigo abierto</h2>
-        <p>Contribui a 50 trabajos de codigo abierto y tengo mas de 200 estrellas en Github</p>
-        <p><a href="#">Ver mi perfil de github</a></p>
-    </section>
-
-    <aside>
-        <h2>Educacion</h2>
-        <p>Graduado con 9.8 sobre 10 en la universidad nacional de colombia</p>
-        <p>Cursos pasados:</p>
-        <ul>
-            <li>Programacion orientada a objetos</li>
-            <li>Estructura de datos y algoritmos</li>
-            <li>Trabajo web</li>
-            <li>Inteligencia artificial</li>
-            <li>Ciencias de computacion</li>
-            <li>DataBase</li>
-            <li>Matematicas</li>
-        </ul>
-    </aside>
+        <aside>
+            <h2>Educacion</h2>
+            <p>Graduado con 9.8 sobre 10 en la universidad nacional de colombia</p>
+            <p>Cursos pasados:</p>
+            <ul>
+                <li>Programacion orientada a objetos</li>
+                <li>Estructura de datos y algoritmos</li>
+                <li>Trabajo web</li>
+                <li>Inteligencia artificial</li>
+                <li>Ciencias de computacion</li>
+                <li>DataBase</li>
+                <li>Matematicas</li>
+            </ul>
+        </aside>
+    </div>
     <!-- Fin del contenido principal que debe ser dividido en 3 secciones horizontales con la misma altura -->
 
-    <h2>Reseñas de mis profesores</h2>
+    <h2 class="titulo-h2">Reseñas de mis profesores</h2>
 
-    <article>
-        <p> Jostiv es un estudiante brillante, paso todas sus materias</p>
-        <p>Jhen Doe</p>
-        <p>Profesora</p>
-    </article>
 
-    <article>
-        <p> Jostiv es un estudiante brillante, paso todas sus materias</p>
-        <p>Jhen Doe</p>
-        <p>Profesora</p>
-    </article>
 
-    <article>
-        <p> Jostiv es un estudiante brillante, paso todas sus materias</p>
-        <p>Jhen Doe</p>
-        <p>Profesora</p>
-    </article>
+    <div class="contenedor-final">
+        <article>
+            <p> Jostiv es un estudiante brillante, paso todas sus materias</p>
+            <p>Jhen Doe</p>
+            <p>Profesora</p>
+        </article>
+
+        <article>
+            <p> Jostiv es un estudiante brillante, paso todas sus materias</p>
+            <p>Jhen Doe</p>
+            <p>Profesora</p>
+        </article>
+
+        <article>
+            <p> Jostiv es un estudiante brillante, paso todas sus materias</p>
+            <p>Jhen Doe</p>
+            <p>Profesora</p>
+        </article>
+    </div>
 
     <!--3 reseñas de profesores que igualmente tienen que ir alineadas horizontalmente-->
 
-    <footer>
+    <footer class="footer">
         <p>©Todos los derechos reservados 2026</p>
     </footer>
 
